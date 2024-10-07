@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>StopWatch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container">
+        <div class="timer-display">
+            00 : 00 : 00 : 00
+        </div>
+        <ul class="laps"></ul>
+
+        <div class="action">
+            <div id="startTimer">Start</div>
+            <div id="pauseTimer">Pause</div>
+            <div id="resetTimer">Reset</div>
+            <div id="restartTimer">Restart</div>
+            <div id="lap">Lap</div>
+            <div id="resetLap">Reset Laps</div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
