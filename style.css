@@ -19,3 +19,13 @@
                 rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
                 rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
+.timer-display {
+    width: 100%;
+    background: #9e9e9e;
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
