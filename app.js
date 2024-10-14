@@ -13,7 +13,7 @@ function start() {
 function run() {
     display.innerHTML = getTimer();
     ms++;
-    if(ms == 100) {
+    if(ms == 70) {
         ms = 0;
         s++;
     }
@@ -30,7 +30,10 @@ function run() {
 }
 
 function getTimer() {
-    return (h<10 ? "0" + h : h) + " : " + (m<10 ? "0" + m : m) + " : " + (s<10 ? "0" + s : s) + " : " + (ms<10 ? "0" + ms : ms)
+    return (h<10 ? "0" + h : h) + " : " + 
+    (m<10 ? "0" + m : m) + " : " + 
+    (s<10 ? "0" + s : s) + " : " + 
+    (ms<10 ? "0" + ms : ms);
 }
 
 function pause() {
@@ -64,4 +67,8 @@ function lap() {
         li.innerHTML = getTimer();
         laps.appendChild(li);
     }
+}
+
+function resetLap() {
+    laps.innerHTML = '';
 }
