@@ -34,10 +34,25 @@ function getTimer() {
 }
 
 function pause() {
-    stopTimer()
+    stopTimer();
 }
 
 function stopTimer() {
     clearInterval(timer)
     timer = false
+}
+
+
+
+
+
+
+
+function reset() {
+    stopTimer()
+    ms = 0
+    s = 0
+    m = 0
+    h = 0
+    display.innerHTML = getTimer()
 }
