@@ -42,12 +42,6 @@ function stopTimer() {
     timer = false
 }
 
-
-
-
-
-
-
 function reset() {
     stopTimer()
     ms = 0
@@ -55,4 +49,11 @@ function reset() {
     m = 0
     h = 0
     display.innerHTML = getTimer()
+}
+
+function restart() {
+    if(timer) {
+        reset()
+        start()
+    }
 }
