@@ -32,3 +32,12 @@ function run() {
 function getTimer() {
     return (h<10 ? "0" + h : h) + " : " + (m<10 ? "0" + m : m) + " : " + (s<10 ? "0" + s : s) + " : " + (ms<10 ? "0" + ms : ms)
 }
+
+function pause() {
+    stopTimer()
+}
+
+function stopTimer() {
+    clearInterval(timer)
+    timer = false
+}
