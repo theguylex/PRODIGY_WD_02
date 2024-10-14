@@ -1,8 +1,8 @@
 var ms = 0, s = 0, m = 0, h = 0
-var timer
+var timer;
 
-var display = document.querySelector('.timer-display')
-var laps = document.querySelector('.laps')
+var display = document.querySelector('.timer-display');
+var laps = document.querySelector('.laps');
 
 function start() {
     if(!timer) {
@@ -11,21 +11,21 @@ function start() {
 }
 
 function run() {
-    display.innerHTML = getTimer()
-    ms++
+    display.innerHTML = getTimer();
+    ms++;
     if(ms == 100) {
-        ms = 0
-        s++
+        ms = 0;
+        s++;
     }
 
     if(s == 60) {
-        s = 0
-        m++
+        s = 0;
+        m++;
     }
 
     if(m == 60) {
-        m = 0
-        h++
+        m = 0;
+        h++;
     }
 }
 
@@ -43,17 +43,25 @@ function stopTimer() {
 }
 
 function reset() {
-    stopTimer()
-    ms = 0
-    s = 0
-    m = 0
-    h = 0
-    display.innerHTML = getTimer()
+    stopTimer();
+    ms = 0;
+    s = 0;
+    m = 0;
+    h = 0;
+    display.innerHTML = getTimer();
 }
 
 function restart() {
     if(timer) {
-        reset()
-        start()
+        reset();
+        start();
+    }
+}
+
+function lap() {
+    if(timer) {
+        var li = document.createElement('li');
+        li.innerHTML = getTimer();
+        laps.appendChild(li);
     }
 }
