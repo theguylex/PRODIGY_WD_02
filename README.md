@@ -8,7 +8,7 @@ A web app having the functionalities of a stopwatch
 
 * CSS used in styling this page focused on centering the parent container and giving it colors and shadows for aesthetics.
 
-* JavaScript file contains functions that are called when the buttons in the HTML file is clicked on. These functions include start, pause, reset, restart, lap and resetLaps
+* JavaScript file contains functions that are called when the buttons in the HTML file is clicked on. These functions include start, pause, reset, restart, lap and resetLaps.
 
 ## Screenshot
 
