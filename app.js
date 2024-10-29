@@ -13,7 +13,7 @@ function start() {
 function run() {
     display.innerHTML = getTimer();
     ms++;
-    if(ms == 70) {
+    if(ms == 68) {
         ms = 0;
         s++;
     }
